@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Glass+Antiqua&family=Jacques+Francois+Shadow&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: rgb(248, 232, 232);
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 13vh;
+}
+
+header nav {
+  font-family: Jacques Francois Shadow;
+  color: #581845;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+header nav ul {
+  margin-top: 6.5px;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  font-weight: 800;
+  font-size: 20px;
+  font-family: Glass Antiqua;
+  color: #581845;
+  text-decoration: none;
+  margin: 0 30px;
+}
+
+header nav ul li a:hover {
+  cursor: pointer;
+  color: brown;
+  text-decoration: underline;
+}
+
+#home {
+  padding-top: 100px;
+  background-image: url('images/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#home .info {
+  font-family: Glass Antiqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding-right: 30px;
+  width: 50%;
+}
+
+.conteiner p{
+  font-size: 2em;
+  font-family: monospace;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+        typing 2s steps(20),
+        cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+  50% {border-color: transparent;}
+}
+@keyframes typing{
+  from { width: 0}
+}
+
+#home .info button {
+  margin: 10px 0 30px 0px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 20px;
+  border: 2px solid black;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+#home .info button:hover {
+  background-color: #212067;
+  color: #E8CBC0;
+  transform: translateY(-10px);
+}
+
+#home .infoImg {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 50px;
+  width: 50%;
+}
+
+#home i {
+  color: black;
+  font-size: 15px;
+  width: 30px;
+  text-align: center;
+  border: 1px solid black;
+  line-height: 28px;
+  border-radius: 50%;
+  height: 30px;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+#home i:hover {
+  background-color: #212067;
+  color: #E8CBC0;
+  transform: translateY(-10px);
+}
+
+#About {
+  min-height: 70vh;
+  padding: 30px;
+}
+
+#About h1 {
+  font-family: Glass Antiqua;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#About .About-content {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+#About .About-content .imgInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#About .About-content .imgInfo img {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 30px;
+}
+
+#About .About-content .profileInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  width: 50%;
+  height: 100%;
+}
+
+#About .About-content .profileInfo p {
+  font-family: Averia Sans Libre;
+}
+
+#About i {
+  color: black;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  border: 1px solid black;
+  line-height: 59px;
+  border-radius: 50%;
+  height: 60px;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+#About i:hover {
+  background-color: #212067;
+  color: #E8CBC0;
+  transform: translateY(-10px);
+}
+
+#About .About-content .profileInfo h4 {
+  margin-top: 20px;
+}
+
+#About .text-icons {
+  margin-top: 15px;
+}
+
+#Services{
+  min-height: 70vh;
+  padding: 30px;
+}
+
+#Services h1{
+  margin-bottom: 10px;
+  font-family: Glass Antiqua;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card {
+  height: 350px;
+  font-family: Averia Sans Libre;
+  color: black;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  width: 300px;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.card:hover{
+  color: rgb(26, 24, 24);
+  background-color: rgb(212, 206, 206);
+  transform: translateY(-10px);
+}
+
+.card img {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card .box-content{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  color: #f0f0ec;
+  text-shadow: 3px 0px 7px rgba(81,67,21,0.8), 
+      -3px 0px 7px rgba(81,67,21,0.8), 
+      0px 4px 7px rgba(81,67,21,0.8);
+  opacity: 0;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.4s ease-in-out;
+}
+
+.card .box-content h3{
+  font-size: 14px;
+}
+.card:hover .box-content{
+  opacity: 1;
+  left: 50%;
+}
+.card::after{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid purple;
+  background-color: #0202028f;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+.card:hover::after{
+  opacity: 1;
+}
+
+.cards .card{
+  margin: 10px;
+}
+
+.cards .card:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#ContactMe{
+  font-family: Averia Sans Libre;
+  min-height: 70vh;
+  padding: 30px;
+}
+
+#ContactMe h1{
+  margin-bottom: 10px;
+  font-family: Glass Antiqua;
+  text-align: center;
+  margin-top: 50px;
+}
+.connect{
+  display: flex;
+  justify-content: space-around;
+}
+.contactDetails{
+  width: 40%;
+
+}
+
+#contact {
+  width: 40%;
+}
+
+#contact .container {
+  border: 1px solid black;
+  font-family: Itim;
+  min-height: 200px;
+  padding: 20px;
+  width: 90%;
+  background-color: #e0d8d5;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#contact .container:hover{
+  background-color: #8c8080;
+  color: blanchedalmond;
+}
+
+#contact .container form .buton {
+  margin: 15px;
+  letter-spacing: 2px;
+  font-family: Bebas Neue;
+  padding: 10px;
+  width: 150px;
+  outline: none;
+  border-radius: 30px;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+#contact .container form .buton:hover {
+  background-color: #212067;
+  color: #E8CBC0;
+  transform: translateY(-10px);
+}
+
+#contact i {
+  color: black;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  border: 1px solid black;
+  line-height: 50px;
+  border-radius: 50%;
+  height: 50px;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+#contact i:hover {
+  background-color: #212067;
+  color: #E8CBC0;
+  transform: translateY(-10px);
+}
+.Address p{
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+.Address i{
+  color: black;
+  font-size: 15px;
+  width: 30px;
+  text-align: center;
+  border: 1px solid black;
+  line-height: 28px;
+  border-radius: 50%;
+  height: 30px;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.Address i:hover {
+  background-color: #212067;
+  color: #E8CBC0;
+  transform: translateY(-10px);
+}
+
+.Email label,p{
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+.Email i{
+  color: black;
+  font-size: 15px;
+  width: 30px;
+  text-align: center;
+  border: 1px solid black;
+  line-height: 28px;
+  border-radius: 50%;
+  height: 30px;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.Email i:hover {
+  background-color: #212067;
+  color: #E8CBC0;
+  transform: translateY(-10px);
+}
+
+.Linkedin label,p{
+  margin-left: 5px;
+  margin-top: 7px;
+}
+.Linkedin i{
+  color: black;
+  font-size: 15px;
+  width: 30px;
+  text-align: center;
+  border: 1px solid black;
+  line-height: 28px;
+  border-radius: 50%;
+  height: 30px;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.Linkedin i:hover {
+  background-color: #212067;
+  color: #E8CBC0;
+  transform: translateY(-10px);
+}
+
+footer{
+  font-family: Glass Antiqua;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: #e6e6e6;
+  padding: 20px;
+}
